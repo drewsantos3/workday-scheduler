@@ -11,9 +11,6 @@ $(function () {
     localStorage.setItem(parent, description);
   });
 
-  let date = dayjs().format("MMM D, YYYY");
-  $("#currentDay").text(date);
-
   $(".time-block").each(function () {
     $(this).removeClass("past");
     $(this).removeClass("present");
@@ -27,6 +24,20 @@ $(function () {
       $(this).addClass("future");
     }
   });
+
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+  $("#hour-9").children(".description").val(localStorage.getItem("hour-9"));
+
+  let date = dayjs().format("MMM D, YYYY");
+  $("#currentDay").text(date);
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
