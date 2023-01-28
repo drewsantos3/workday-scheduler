@@ -1,2 +1,2 @@
 # workday-scheduler
-calendar application
+ simple calendar application
